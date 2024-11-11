@@ -8,8 +8,6 @@ import { PhotoService, UserPhoto } from 'src/app/services/photo.service';
 import { ActionSheet, ActionSheetButtonStyle } from '@capacitor/action-sheet';
 import { CapacitorBarcodeScanner, CapacitorBarcodeScannerTypeHint } from '@capacitor/barcode-scanner';
 import { ScreenReader } from '@capacitor/screen-reader';
-import { PluginListenerHandle } from '@capacitor/core';
-import { Motion } from '@capacitor/motion';
 
 @Component({
   selector: 'app-photo-gallery',
@@ -63,10 +61,6 @@ export class PhotoGalleryPage implements OnInit {
   // }
   async ngOnInit() {
     await this.photoService.loadSaved();
-    Motion.addListener('accel', (motionData) => {
-      console.log('Motion Data:', motionData);
-      this.motionEvent = motionData;
-    });
   }
 
   async startScan() {
@@ -91,8 +85,5 @@ export class PhotoGalleryPage implements OnInit {
     await ScreenReader.speak({ value: 'Investing in crypto can be a great way to diversify your portfolio and potentially earn high returns.' });
   };
 
-  // monitorMotion() {
-    
-  // }
 
 }

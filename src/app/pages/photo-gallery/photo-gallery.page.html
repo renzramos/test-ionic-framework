@@ -14,9 +14,7 @@
     <ion-button color="secondary" expand="full" (click)="startScan()">Barcode Reader</ion-button>
     <ion-button color="secondary" expand="full" (click)="sayHello()">Say Hello</ion-button>
   </div>
-  <div class="" *ngIf="!motionEvent">
-    <h2>No motion</h2>
-  </div>
+  
   <div class="" *ngIf="motionEvent">
     <h2>Motion</h2>
     <p>{{ motionEvent.acceleration.x }}</p>
