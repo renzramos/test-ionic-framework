@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-        <string>test-ionic-ic-framework</string>
+	<string>Test Ionic</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -45,5 +45,16 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>To take photos</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>To take photos</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To take photos</string>
+	<key>UIAccessibilityScreenReaderEnabled</key>
+	<true/>
+	<key>NSMotionUsageDescription</key>
+	<string>We need access to motion sensors to track device motion for better app functionality.</string>
+
 </dict>
 </plist>
